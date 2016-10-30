@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   
+  # define a relation to an object
+  resources :articles
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
