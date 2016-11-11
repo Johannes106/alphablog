@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   # define a relation to an object
   resources :articles
 
+  # define sign up
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
