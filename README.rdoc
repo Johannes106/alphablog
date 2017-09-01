@@ -1,1 +1,16 @@
 This is the repository for the first alphablog app 
+#create app
+rails new alphablog
+#start server
+rails s -b $IP -p $PORT
+#create controller with home and about
+rails generate controller home about
+# edit routes.rb
+
+
+
+Here some general stuff:
+ROUTER -> Controller -> (Model->[DB] <-> View) MVC
+
+environments: developemt -> test -> production
+Full stack = Frontend + Backend
